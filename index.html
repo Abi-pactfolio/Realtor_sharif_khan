@@ -16,6 +16,46 @@ Author URL: http://w3layouts.com
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+	  <style>
+      .button {
+        border-radius: 8px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 5px;
+        width: 300px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      </style>
   </head>
   <body>
 
@@ -268,8 +308,10 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
+	       <a href="PLP.html"><button class="button"><span>More Properties </span></button></a>
            </div>
     </div>
+	    
 </section>
 
 <section class="w3l-services2" id="services">
