@@ -10420,7 +10420,7 @@ h4.sub-title {
     top: 0.9em; } }
 
 .form-12 .form-12-content {
-  background: url("../images/Test_123_1.jpg") no-repeat;
+  background: url("../images/herohome4.gif") no-repeat;
   background-size: cover;
   padding: 8rem 0px;
   position: relative;
@@ -10428,7 +10428,6 @@ h4.sub-title {
 
 .form-12 .form-12-content:before {
   content: "";
-  background: rgba(0, 33, 71, 0.4);
   position: absolute;
   top: 0;
   min-height: 100%;
