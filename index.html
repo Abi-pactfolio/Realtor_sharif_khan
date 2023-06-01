@@ -15,6 +15,8 @@ Author URL: http://w3layouts.com
     <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
     <!-- //web fonts -->
     <!-- Template CSS -->
+	  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style-starter.css">
 	  <style>
       .button {
@@ -127,90 +129,87 @@ Author URL: http://w3layouts.com
     </div>
   </nav>
 </section>
-<section class="form-12" id="home">
-	<div class="form-12-content">
-		<div class="container">
-			<div class="grid grid-column-2 ">
-				<div class="column2">
-					</div>
-				<div class="column1">
-					
-					
-						<form action="sendto:realtor@sharifkhan.org" method="post" class="main-input">
-							<div class="blog-search form d-flex search-form"><div class="top-inputs d-grid"></div>
-								<input type="search" class="form-control" placeholder="Enter Location, Property, Landmark" name="search" required="required">
-								<button type="submit" class="btn search-btn"><span class="fa fa-search"></span></button>
-							</div>
-							<div class="form-top">
-								<select id="sel1">
-									<option>All Actions</option>
-									<option>Rent</option>
-									<option>Buy</option>
-								  </select>
-								  <select id="sel2">
-									<option>All Types</option>
-									<option>Apartment</option>
-									<option>Business</option>
-									<option>House</option>
-									<option>Luxury</option>
-									<option>Residential</option>
-									<option>Restaurant</option>
-									<option>Single Family</option>
-									<option>Villa</option>
-								  </select>
-								
-							</div>
-							
-							<div class="form-top">
-								<select id="sel3">
-									<option>All Cities</option>
-									<option>Toronto</option>
-									<option>Scarborough</option>
-									<option>Mississauga</option>
-									<option>Brampton</option>
-									<option>Hamilton</option>
-                  <option>Markham</option>
-								</select>
-								<select id="sel4">
-									<option>Min Rooms</option>
-									<option>All Rooms</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-								</select>
-						
-							</div>
-						
-							<div class="form-top">
-							
-								<select id="sel5">
-									<option>Min Baths</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									<option>6</option>
-									<option>7</option>
-								</select>
-								
-							</div> <br>
-              <div class="top-inputs d-grid">
-								<input type="text" placeholder="Name" name="w3lName" id="w3lName" required=""><br>
-							<input type="text" placeholder="Phone Number" name="w3lName" id="w3lName" required="">
-							</div>
-							
-							<button type="submit" class="btn">Submit</button>
-						</form>
-					</div>
-				
-			</div>
-		</div>
-	</div>
+          
+            <section class="form-12" id="home">
+                <div class="form-12-content">
+                    <div class="container">
+                        <div class="grid grid-column-2 ">
+                            <div class="column2">
+                                </div>
+                            <div class="column1">
+            <form id="submit-form"action="" class="main-input">
+                <div class="blog-search form d-flex search-form"><div class="top-inputs d-grid"></div>
+                    <input type="search" class="form-control" placeholder="Enter Location, Property, Landmark" name="search" required="required">
+                    <button type="submit" class="btn search-btn"><span class="fa fa-search"></span></button>
+                </div>
+                <div class="form-top"><select id="sel1"name="Action">   
+           
+                    <option>All Actions</option>
+                    <option>Rent</option>
+                    <option>Buy</option>
+                  </select>
+                  <select id="sel2"name="type">
+                    <option>All Types</option>
+                    <option>Apartment</option>
+                    <option>Business</option>
+                    <option>House</option>
+                    <option>Luxury</option>
+                    <option>Residential</option>
+                    <option>Restaurant</option>
+                    <option>Single Family</option>
+                    <option>Villa</option>
+                  </select>
+                
+            </div>
+            <div class="form-top">
+                <select id="sel3"name="City">
+                    <option>All Cities</option>
+                    <option>Toronto</option>
+                    <option>Scarborough</option>
+                    <option>Mississauga</option>
+                    <option>Brampton</option>
+                    <option>Hamilton</option>
+  <option>Markham</option>
+                </select>
+                <select id="sel4"name="MinRooms">
+                    <option>All Rooms</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+        
+            </div>
+        
+            <div class="form-top">
+            
+                <select id="sel5"name="bath">
+                    <option>Min Baths</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+                
+            </div> <br>
+<div class="top-inputs d-grid">
+                <input type="text" placeholder="Name" name="Name" id="w3lName" required=""><br>
+            <input type="text" placeholder="Phone Number" name="Phone" id="w3lName" required="">
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+</div>
+</div>
+</div>
 </section>
 <section class="grids-4" id="properties">
     <div id="grids4-block" class="py-5">
@@ -732,47 +731,28 @@ Author URL: http://w3layouts.com
                    <!-- /move top -->
   </section>
   <!-- // grids block 5 -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <!-- //footer-28 block -->
-  </section>
   
-  <script>
-      $(function () {
-        $('.navbar-toggler').click(function () {
-          $('body').toggleClass('noscroll');
-        })
-      });
-    </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-      </script>
   
   <!-- Smooth scrolling -->
+  <script>
+    $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbx6Y0G1KX1GTpo3uP9JmZZnXwnuIDMJpYGIFJKTc-bx_Yc9vIdivPoAbibB4Ka_uUA4qg/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
   
+              }
+          })
+      })
+</script>
   
 
 </body>
